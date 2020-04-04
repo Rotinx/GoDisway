@@ -62,5 +62,7 @@ func Init() {
 	log.Printf("Bot logged in. %s", u)	
 
 	// Load commands.
-	handler.New("love","Test command", false, command.Hello)
+	handler.InitDb()
+	handler.New("love","Test command", false, command.LoveMe)
+	
 }
